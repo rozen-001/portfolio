@@ -1,0 +1,60 @@
+$bg-color-1: #c9e9b3;
+$button-color-1: #4bcca5;
+$button-color-2: #4b96cc;
+
+
+
+
+body {
+    background-color: $bg-color-1;
+}
+.container {
+    width: 900px;
+    margin: 0 auto;
+    background-color: lighten(red, 50%);
+    padding: 50px;
+    
+}
+@import 'header';
+@import 'mixin';
+
+
+
+.button-a {
+    background: transparent;
+    background-color: $button-color-1; 
+    border-color: #129CF3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 19px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+     -o-transition: all 1s;
+}
+.button-b {
+    @extend .button-a;
+    margin-left: 20px;
+    @include gradient(blue, lighten(orange, 30%));
+    color: #fff;
+
+    
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */

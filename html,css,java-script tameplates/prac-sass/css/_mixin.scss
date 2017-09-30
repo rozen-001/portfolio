@@ -1,0 +1,3 @@
+@mixin gradient($fromcolor, $tocolor) {
+    background-image: linear-gradient(to bottom, $fromcolor, $tocolor);
+}

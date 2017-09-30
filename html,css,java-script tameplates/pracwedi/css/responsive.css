@@ -1,0 +1,139 @@
+body {
+    background-color: red;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px #80e4d6;
+    color: aquamarine;
+    
+}
+h2 {
+    text-transform: uppercase;
+}
+body p {
+    line-height: 1.6em;
+}
+
+.container {
+    padding-top: 20px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    position: relative;
+    border: 2px solid #386789;
+}
+.logo {
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+/*============== nav part ===============*/
+div#nav ul {
+    padding: 0;
+    margin: 0;
+    background-color: antiquewhite;
+}
+div#nav ul li {
+    float: left;
+    list-style: none;
+    
+}
+div#nav ul li a {
+    padding: 10px 40px;
+    display: block;
+    border-right: 2px solid #e9e7e6;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+div#nav ul li a:hover {
+    background-color: #5f8b59;
+    color: aliceblue;
+}
+div#nav ul li:hover ul li a {
+    background-color: #d7e8d3;
+    border-right: none;
+    
+}
+div#nav ul li:hover ul li a:hover {
+    background-color: #345c79;
+    
+}
+div#nav ul ul {
+    position: absolute;
+    left: -999px;
+}
+div#nav ul li:hover ul {
+    left: auto;
+}
+div#nav ul li ul li {
+    float: none;
+}
+div#nav ul li.last a {
+    border-right: none;
+}
+/*=========== content style ============*/
+.content {
+    margin-top: 50px;
+}
+.main {
+    width: 75%;
+    float: left;
+    
+}
+.space {
+    background-color: #e8ecea;
+    margin: 3px;
+    padding: 10px;
+}
+.main .first-col {
+    width: auto;
+    float: left;
+}
+.main .second-col {
+    width: auto;
+    float: right;
+}
+.main .third-col {
+    width: auto;
+    float: left;
+}
+   /*======side col=========*/
+.side {
+    width: 20%;
+    float: right;
+    background-color: #bcc2cb;
+    padding: 10px;
+}
+.side img {
+    margin-top: 10px;
+}
+
+
+/*=========== footer ===============*/
+footer {
+    background-color: #344641;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+/*========== clearfix ================*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */

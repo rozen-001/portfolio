@@ -1,0 +1,67 @@
+body {
+  background-color: #c9e9b3; }
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 50px; }
+
+header nav ul {
+  padding: 0;
+  margin: 0; }
+header nav li {
+  list-style: none;
+  float: left; }
+header nav a {
+  display: block;
+  padding: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #c2dcee;
+  color: #fff;
+  border: 3px solid #c2eee1;
+  border-radius: 10px; }
+
+.button-a, .button-b {
+  background: transparent;
+  background-color: #4bcca5;
+  border-color: #129CF3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 19px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s; }
+
+.button-b {
+  margin-left: 20px;
+  background-image: linear-gradient(to bottom, blue, #ffdb99);
+  color: #fff; }
+
+.clearfix:after, header nav ul:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix, header nav ul {
+  display: inline-block; }
+
+/* Hides from IE-mac \*/
+* html .clearfix, * html header nav ul, header nav * html ul {
+  height: 1%; }
+
+.clearfix, header nav ul {
+  display: block; }
+
+/* End hide from IE-mac */
+
+/*# sourceMappingURL=style.css.map */
